@@ -1,0 +1,15 @@
+#tabela{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    grid-template-rows: auto; /* Altura automática para as linhas */
+}
+
+#colunaA{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#colunaB{
+    grid-column: 2;
+    grid-row: 1;
+}
