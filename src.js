@@ -11,14 +11,14 @@ function separar(){
         let ultimo=0;
         for(let i=0; i<linhaAtual.length; i++){
             const letraAtual = linhaAtual[i];
-            if(letraAtual>='a' && letraAtual<='z' || letraAtual>='A' && letraAtual<='Z'){
+            if(!(letraAtual>='0' && letraAtual<='9')){
                 ultimo=i+1;
             }
         }
         
 
         console.log("tamanho: ", linhaAtual.length, ultimo);
-        if(ultimo>3 && linhaAtual[ultimo-3]=='T' && linhaAtual[ultimo-2]=='R' && linhaAtual[ultimo-1]=='F' && linhaAtual[ultimo]=='5'){
+        if(ultimo>3 && (linhaAtual[ultimo-3]=='T' || linhaAtual[ultimo-3]=='t') && (linhaAtual[ultimo-2]=='R' || linhaAtual[ultimo-2]=='r') && (linhaAtual[ultimo-1]=='F' || linhaAtual[ultimo-1]=='f') && linhaAtual[ultimo]=='5'){
             ultimo++;
         }
 
